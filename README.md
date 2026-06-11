@@ -4,6 +4,11 @@ PawPaw Power is an original desktop-only 16-bit style calico cat adventure platf
 
 The calico hero runs, jumps, throws fishbones, collects colorful cat food, finds secrets, clears scenario-based platforming challenges, and defeats a boss at the end of every level.
 
+## Links
+
+- Live game: https://pawpaw-power-retro-game.vercel.app/
+- GitHub repo: [Mah-era/pawpaw-power-retro-game](https://github.com/Mah-era/pawpaw-power-retro-game)
+
 ## Installation
 
 ```bash

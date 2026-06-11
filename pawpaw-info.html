@@ -116,11 +116,33 @@
         color: #ffb3c4;
         font-weight: bold;
       }
+
+      .links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin: 16px 0 22px;
+      }
+
+      .links a {
+        color: #101426;
+        background: #ffd166;
+        border: 2px solid #fff0a6;
+        border-radius: 8px;
+        padding: 10px 12px;
+        font-weight: bold;
+        text-decoration: none;
+      }
     </style>
   </head>
   <body>
     <main>
       <h1>PawPaw Power</h1>
+
+      <nav class="links" aria-label="Project links">
+        <a href="https://pawpaw-power-retro-game.vercel.app/">Live Game</a>
+        <a href="https://github.com/Mah-era/pawpaw-power-retro-game">GitHub Repo</a>
+      </nav>
 
       <p class="description">PawPaw Power is an original retro side-scrolling platformer where the player controls a cute calico cat hero through colorful worlds, collects cat food, uses power-ups, throws fishbones with the Space key, avoids hazards, discovers secret routes, activates checkpoints, defeats enemies, and beats a boss at the end of every level to continue the adventure.</p>
 

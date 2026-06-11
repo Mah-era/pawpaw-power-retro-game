@@ -2,6 +2,10 @@
 
 Report date: June 10, 2026
 
+Live game: https://pawpaw-power-retro-game.vercel.app/
+
+GitHub repo: [Mah-era/pawpaw-power-retro-game](https://github.com/Mah-era/pawpaw-power-retro-game)
+
 ## 1. Project Overview
 
 PawPaw Power is a desktop-only 2D retro platformer built with Phaser.js, HTML, CSS, and JavaScript. The game is an original cat-themed adventure inspired by the feel of classic side-scrolling platformers, while avoiding copied characters, sprites, music, sounds, level layouts, names, or copyrighted assets.

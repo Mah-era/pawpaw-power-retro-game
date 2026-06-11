@@ -584,6 +584,7 @@ async function buildReportHtml(assets) {
 
   addPage('PawPaw Power', 'Product Management Business Report',
     `<p class="lead">A 16-bit calico cat platformer with retro gameplay, boss battles, collectibles, and scenario-based level design.</p>
+     <div class="project-links"><a href="https://pawpaw-power-retro-game.vercel.app/">Live Game</a><a href="https://github.com/Mah-era/pawpaw-power-retro-game">Mah-era/pawpaw-power-retro-game</a></div>
      <div class="cover-meta"><span>Portfolio Case Study</span><span>Original Game Project</span><span>Cyberpunk Business Report Theme</span></div>`,
     img(assets.screenshots.mainMenu, 'Game title and main menu screenshot', 'hero-shot'),
     { section: 'Cover', className: 'cover-page' });
@@ -1818,6 +1819,8 @@ function renderHtml(pages) {
     .cover-page .content { grid-template-columns: .88fr 1.12fr; }
     .cover-meta { display:flex; flex-wrap:wrap; gap:2mm; margin-top:8mm; }
     .cover-meta span { border:1px solid rgba(255,79,216,.5); color:#fff; border-radius:99px; padding:2mm 4mm; background:rgba(255,79,216,.12); font-size:8pt; }
+    .project-links { display:flex; flex-wrap:wrap; gap:2mm; margin-top:5mm; }
+    .project-links a { border:1px solid rgba(80,245,255,.55); color:#50f5ff; border-radius:2mm; padding:2mm 3mm; background:rgba(80,245,255,.08); text-decoration:none; font-size:8pt; }
     .divider-page .content { grid-template-columns: 1fr; place-items:center; text-align:center; }
     .divider-page h1 { font-size: 36pt; line-height:1.02; }
     .divider-page .text-panel { min-height: 112mm; display:flex; flex-direction:column; justify-content:center; align-items:center; }

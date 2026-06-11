@@ -1,7 +1,12 @@
 {
-  "name": "pawpaw-power-retro-platformer",
+  "name": "pawpaw-power-retro-game",
   "version": "1.0.0",
   "description": "An original desktop-only 16-bit calico cat adventure platformer.",
+  "homepage": "https://pawpaw-power-retro-game.vercel.app/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mah-era/pawpaw-power-retro-game.git"
+  },
   "type": "module",
   "private": true,
   "scripts": {
