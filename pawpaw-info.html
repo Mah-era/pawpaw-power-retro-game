@@ -133,6 +133,58 @@
         font-weight: bold;
         text-decoration: none;
       }
+
+      @page {
+        size: A4;
+        margin: 12mm 10mm;
+      }
+
+      @media print {
+        body {
+          display: block;
+          background: #101426;
+        }
+
+        main {
+          width: auto;
+          min-height: auto;
+          border-radius: 0;
+          padding: 22px;
+        }
+
+        h1,
+        h2,
+        .description,
+        .card,
+        .boss-card,
+        footer {
+          break-inside: avoid;
+          page-break-inside: avoid;
+        }
+
+        h2 {
+          break-after: avoid;
+          page-break-after: avoid;
+        }
+
+        .objects {
+          align-items: stretch;
+        }
+
+        .card {
+          min-height: 112px;
+        }
+
+        .boss-shot {
+          max-height: 260px;
+        }
+
+        a {
+          color-adjust: exact;
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+      }
     </style>
   </head>
   <body>
