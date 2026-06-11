@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.DS_Store
+.claude/
+reports/final_audit_previews/
+reports/previews/
+reports/playtest_*.png
+*.log
+*.png
+*.pdf

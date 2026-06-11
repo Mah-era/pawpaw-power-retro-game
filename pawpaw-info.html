@@ -1,0 +1,462 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PawPaw Power - Game Info</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        font-family: Arial, sans-serif;
+        background: #101426;
+        color: #fff7d6;
+        display: grid;
+        place-items: center;
+      }
+
+      main {
+        width: min(900px, calc(100% - 32px));
+        background: #191d35;
+        border: 3px solid #ffd166;
+        border-radius: 12px;
+        padding: 28px;
+      }
+
+      h1 {
+        margin: 0 0 16px;
+        color: #ffd166;
+        font-size: 42px;
+      }
+
+      h2 {
+        margin-top: 28px;
+        color: #9de8ff;
+      }
+
+      .description {
+        line-height: 1.6;
+        font-size: 18px;
+        background: #252b4a;
+        border: 2px solid #3b4269;
+        border-radius: 10px;
+        padding: 16px;
+      }
+
+      .objects {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 14px;
+        margin-top: 12px;
+      }
+
+      .card {
+        background: #252b4a;
+        border: 2px solid #3b4269;
+        border-radius: 10px;
+        padding: 14px;
+      }
+
+      .wide {
+        grid-column: 1 / -1;
+      }
+
+      .icon {
+        width: 48px;
+        height: 48px;
+        image-rendering: pixelated;
+        object-fit: contain;
+        display: block;
+        margin-bottom: 10px;
+        background: #11162b;
+        border: 1px solid #3b4269;
+        border-radius: 8px;
+        padding: 6px;
+      }
+
+      .wide-icon {
+        width: 80px;
+      }
+
+      .screenshot {
+        width: 100%;
+        height: 96px;
+        object-fit: cover;
+        object-position: center;
+        image-rendering: pixelated;
+        display: block;
+        margin-bottom: 10px;
+        background: #11162b;
+        border: 1px solid #3b4269;
+        border-radius: 8px;
+      }
+
+      .boss-card {
+        grid-column: 1 / -1;
+      }
+
+      .boss-shot {
+        width: 100%;
+        height: auto;
+        max-height: 340px;
+        object-fit: contain;
+        object-position: center;
+        image-rendering: pixelated;
+        display: block;
+        margin-bottom: 12px;
+        background: #11162b;
+        border: 2px solid #ffd166;
+        border-radius: 10px;
+      }
+
+      footer {
+        margin-top: 28px;
+        padding-top: 16px;
+        border-top: 1px solid #3b4269;
+        color: #ffb3c4;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>PawPaw Power</h1>
+
+      <p class="description">PawPaw Power is an original retro side-scrolling platformer where the player controls a cute calico cat hero through colorful worlds, collects cat food, uses power-ups, throws fishbones with the Space key, avoids hazards, discovers secret routes, activates checkpoints, defeats enemies, and beats a boss at the end of every level to continue the adventure.</p>
+
+      <h2>Game Objects and What They Mean</h2>
+      <section class="objects">
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_cat_idle_0.png" alt="game visual">
+          <strong>Calico Cat Hero</strong>
+          <p>The player controls PawPaw to run, jump, dodge, collect, and fight.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_food_pink_0.png" alt="game visual">
+          <strong>Cat Food</strong>
+          <p>Collect it for score, rewards, routes, and extra progress.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_fishbone.png" alt="game visual">
+          <strong>Fishbone</strong>
+          <p>Throw it to hit enemies, open boss weak spots, and survive danger.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_block_mystery.png" alt="game visual">
+          <strong>Blocks</strong>
+          <p>Hit mystery, breakable, or hidden blocks to find rewards and secrets.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_hazard_spikes.png" alt="game visual">
+          <strong>Hazards</strong>
+          <p>Avoid spikes, cars, rivers, lava, falling objects, and boss attacks.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_boss_0.png" alt="game visual">
+          <strong>Bosses</strong>
+          <p>Defeat the boss at the end of each level to unlock the next stage.</p>
+        </div>
+      </section>
+
+      <h2>All Cat Food and Power-Ups</h2>
+      <section class="objects">
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_food_pink_0.png" alt="game visual">
+          <strong>Normal Cat Food</strong>
+          <p>Collect for score. Trails also guide jumps, routes, and safe paths.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_power_speed.png" alt="game visual">
+          <strong>Red Cat Food</strong>
+          <p>Gives a temporary speed boost. Use it to run faster and clear longer sections.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_power_shield.png" alt="game visual">
+          <strong>Blue Cat Food</strong>
+          <p>Gives a shield. It protects PawPaw from one hit.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_power_double.png" alt="game visual">
+          <strong>Purple Cat Food</strong>
+          <p>Gives temporary double jump. Use it for high platforms and recovery.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_power_bonus.png" alt="game visual">
+          <strong>Gold Cat Food</strong>
+          <p>Gives a large score bonus. Often found in risky or secret areas.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_power_life.png" alt="game visual">
+          <strong>Green Cat Food</strong>
+          <p>Gives an extra life. It is rare and valuable.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_power_projectile.png" alt="game visual">
+          <strong>Silver Cat Food</strong>
+          <p>Upgrades fishbone throws for a short time. Very useful against bosses.</p>
+        </div>
+      </section>
+
+      <h2>All Blocks and Interactions</h2>
+      <section class="objects">
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_tile_grass.png" alt="game visual">
+          <strong>Solid Blocks</strong>
+          <p>Stand on them, jump from them, and use them as normal platforms.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_block_mystery.png" alt="game visual">
+          <strong>Mystery Blocks</strong>
+          <p>Hit from below to release cat food, power-ups, or hidden rewards.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_block_breakable.png" alt="game visual">
+          <strong>Breakable Blocks</strong>
+          <p>Break them from below or with attacks to open paths and reveal items.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_block_hidden.png" alt="game visual">
+          <strong>Hidden Blocks</strong>
+          <p>Invisible until PawPaw touches them from below. Search for secrets.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_block_used.png" alt="game visual">
+          <strong>Used Blocks</strong>
+          <p>Show that a mystery block reward has already been collected.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_secret_catdoor.png" alt="game visual">
+          <strong>Secret Path Blocks</strong>
+          <p>Reveal shortcuts, bonus rooms, or hidden routes when discovered.</p>
+        </div>
+      </section>
+
+      <h2>All Enemies</h2>
+      <section class="objects">
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_enemy_walker_0.png" alt="game visual">
+          <strong>Walking Enemy</strong>
+          <p>Patrols platforms. Stomp it from above or hit it with a fishbone.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_enemy_flyer_0.png" alt="game visual">
+          <strong>Flying Enemy</strong>
+          <p>Moves through the air. Dodge its path or throw fishbones to clear it.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_enemy_jumper_0.png" alt="game visual">
+          <strong>Jumping Enemy</strong>
+          <p>Hops in rhythm. Time a stomp or attack from a safe distance.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_enemy_spiky.png" alt="game visual">
+          <strong>Spiky Enemy</strong>
+          <p>Do not stomp it. Avoid it or attack with fishbones when possible.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_enemy_traffic.png" alt="game visual">
+          <strong>Traffic Enemy</strong>
+          <p>Moves fast in city areas. Watch its timing before crossing.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_enemy_river_0.png" alt="game visual">
+          <strong>River Enemy</strong>
+          <p>Appears near water. Keep balance on platforms while avoiding it.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_enemy_rooftop_0.png" alt="game visual">
+          <strong>Rooftop Enemy</strong>
+          <p>Blocks rooftop paths. Stomp carefully or throw a fishbone.</p>
+        </div>
+      </section>
+
+      <h2>All Platforms and Routes</h2>
+      <section class="objects">
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_tile_grass.png" alt="game visual">
+          <strong>Ground Platform</strong>
+          <p>Normal safe ground for running, landing, and fighting enemies.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_platform_grass.png" alt="game visual">
+          <strong>Floating Platform</strong>
+          <p>Jump onto it to cross gaps or reach higher food trails.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_platform_city.png" alt="game visual">
+          <strong>Moving Platform</strong>
+          <p>Ride it and jump at the right time to continue safely.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_platform_rooftop.png" alt="game visual">
+          <strong>Rooftop Platform</strong>
+          <p>Use it for building jumps, ledges, balconies, and vertical routes.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_log_platform.png" alt="game visual">
+          <strong>Log Platform</strong>
+          <p>Ride it over river water without falling in.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_boat_platform.png" alt="game visual">
+          <strong>Boat Platform</strong>
+          <p>Use it as a moving river crossing platform.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_safe_island.png" alt="game visual">
+          <strong>Traffic Safe Island</strong>
+          <p>Stand here between road lanes while waiting for traffic gaps.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_platform_castle.png" alt="game visual">
+          <strong>Tower Platform</strong>
+          <p>Used in the final level for harder jumps and collapsing routes.</p>
+        </div>
+      </section>
+
+      <h2>Secrets, Checkpoints, and Goals</h2>
+      <section class="objects">
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_checkpoint.png" alt="game visual">
+          <strong>Checkpoint</strong>
+          <p>Touch it to respawn there after losing a life.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_goal.png" alt="game visual">
+          <strong>Goal Object</strong>
+          <p>Marks level progress, but bosses must be defeated to finish levels.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_secret_box.png" alt="game visual">
+          <strong>Cardboard Box Tunnel</strong>
+          <p>Enter it to reach a bonus route or shortcut.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_secret_catdoor.png" alt="game visual">
+          <strong>Cat Door</strong>
+          <p>Use it to enter secret spaces or hidden paths.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_secret_tree.png" alt="game visual">
+          <strong>Tree Hole</strong>
+          <p>Find it in grassland areas to reach secret rewards.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_secret_drain.png" alt="game visual">
+          <strong>Drain</strong>
+          <p>City shortcut entrance for hidden routes.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_secret_vent.png" alt="game visual">
+          <strong>Rooftop Vent</strong>
+          <p>Rooftop portal or shortcut into secret areas.</p>
+        </div>
+      </section>
+
+      <h2>All Hazards</h2>
+      <section class="objects">
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_hazard_pit.png" alt="game visual">
+          <strong>Pits</strong>
+          <p>Falling into a pit costs a life. Jump carefully across gaps.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_hazard_spikes.png" alt="game visual">
+          <strong>Spikes</strong>
+          <p>Touching spikes hurts PawPaw unless shield is active.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_vehicle_car.png" alt="game visual">
+          <strong>Cars</strong>
+          <p>Move across road lanes. Touching them causes life loss.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_vehicle_bus.png" alt="game visual">
+          <strong>Buses</strong>
+          <p>Larger road hazards. Wait for timing gaps before crossing.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_vehicle_bike.png" alt="game visual">
+          <strong>Bikes</strong>
+          <p>Fast moving traffic hazards. Watch their speed before jumping.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_hazard_water.png" alt="game visual">
+          <strong>River Water</strong>
+          <p>Falling into water costs a life. Use logs, boats, and platforms.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_hazard_fire.png" alt="game visual">
+          <strong>Fire</strong>
+          <p>Damages PawPaw. Jump over it or use shield protection.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_hazard_lava.png" alt="game visual">
+          <strong>Lava</strong>
+          <p>Instant life-loss hazard in the final tower. Avoid completely.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_hazard_rock.png" alt="game visual">
+          <strong>Falling Rocks</strong>
+          <p>Drop from above. Move quickly or wait for a safe opening.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_hazard_sign.png" alt="game visual">
+          <strong>Falling Signs</strong>
+          <p>Rooftop hazards that fall vertically. Time your run underneath.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_chase_orb.png" alt="game visual">
+          <strong>Moving Obstacles</strong>
+          <p>Move in patterns. Observe the motion and pass at the right time.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_platform_castle.png" alt="game visual">
+          <strong>Collapsing Platforms</strong>
+          <p>Fall or disappear after contact. Keep moving after landing.</p>
+        </div>
+        <div class="card">
+          <img class="icon" src="reports/assets/texture_boss_projectile.png" alt="game visual">
+          <strong>Boss Projectiles</strong>
+          <p>Boss attacks that must be dodged before counterattacking.</p>
+        </div>
+      </section>
+
+      <h2>All Bosses</h2>
+      <section class="objects">
+        <div class="card boss-card">
+          <img class="boss-shot" src="reports/assets/screen_level1_boss.png" alt="Grumpy Garden Mole gameplay screenshot">
+          <strong>Grumpy Garden Mole</strong>
+          <p>Level 1 boss. Dodge dirt attacks, throw fishbones, and jump on weak openings.</p>
+        </div>
+        <div class="card boss-card">
+          <img class="boss-shot" src="reports/assets/screen_level2_boss.png" alt="Traffic Rat Rider gameplay screenshot">
+          <strong>Traffic Rat Rider</strong>
+          <p>Level 2 boss. Avoid scooter passes and traffic patterns, then throw fishbones when it slows.</p>
+        </div>
+        <div class="card boss-card">
+          <img class="boss-shot" src="reports/assets/screen_level3_boss.png" alt="Rooftop Crow gameplay screenshot">
+          <strong>Rooftop Crow</strong>
+          <p>Level 3 boss. Dodge falling objects and hit it with fishbones during flight windows.</p>
+        </div>
+        <div class="card boss-card">
+          <img class="boss-shot" src="reports/assets/screen_level4_boss.png" alt="River Croc gameplay screenshot">
+          <strong>River Croc</strong>
+          <p>Level 4 boss. Stay on floating platforms and attack when its weak point opens.</p>
+        </div>
+        <div class="card boss-card">
+          <img class="boss-shot" src="reports/assets/screen_level5_boss.png" alt="Shadow Cat King gameplay screenshot">
+          <strong>Shadow Cat King</strong>
+          <p>Final boss. Dodge dark projectiles, survive phases, use power-ups, and keep throwing fishbones.</p>
+        </div>
+        <div class="card boss-card">
+          <img class="boss-shot" src="reports/assets/screen_level0_boss_training.png" alt="Training Dummy Boss gameplay screenshot">
+          <strong>Training Dummy Boss</strong>
+          <p>Tutorial boss. Practice dodging, throwing fishbones, reading the health bar, and finishing the fight.</p>
+        </div>
+      </section>
+
+      <footer>Creator: Mahera Tasfee</footer>
+    </main>
+  </body>
+</html>
