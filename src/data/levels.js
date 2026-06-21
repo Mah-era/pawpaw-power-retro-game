@@ -227,9 +227,9 @@ export const levels = [
       { x: 8500, y: 320, w: 120, h: 18, period: 1600, objectiveId: 'platform_disappear' },
     ],
     blocks: [
-      { type: 'mystery', x: 6420, y: 340, reward: { type: 'food', count: 3 }, objectiveId: 'interact_mystery' },
-      { type: 'breakable', x: 6560, y: 340, objectiveId: 'interact_break' },
-      { type: 'hidden', x: 6710, y: 300, reward: { type: 'power', powerType: 'bonus' }, objectiveId: 'interact_hidden' },
+      { type: 'mystery', x: 6420, y: 350, reward: { type: 'food', count: 3 }, objectiveId: 'interact_mystery' },
+      { type: 'breakable', x: 6560, y: 350, objectiveId: 'interact_break' },
+      { type: 'hidden', x: 6710, y: 350, reward: { type: 'power', powerType: 'bonus' }, objectiveId: 'interact_hidden' },
     ],
     secretEntrances: [
       { x: 6750, y: 455, w: 46, h: 42, texture: 'secret-tree', label: 'Secret path opened!', target: { x: 6860, y: 420 }, rewardScore: 500, objectiveId: 'interact_secret' },
@@ -667,8 +667,8 @@ export const levels = [
       { x: 3400, y: 405, w: 120, h: 18, period: 1800 },
     ],
     blocks: [
-      { type: 'mystery', x: 380, y: 340, reward: { type: 'power', powerType: 'shield' } },
-      { type: 'breakable', x: 1850, y: 320 },
+      { type: 'mystery', x: 380, y: 350, reward: { type: 'power', powerType: 'shield' } },
+      { type: 'breakable', x: 1850, y: 350 },
       { type: 'hidden', x: 3060, y: 230, reward: { type: 'power', powerType: 'life' } },
       { type: 'mystery', x: 4440, y: 350, reward: { type: 'power', powerType: 'projectile' } },
     ],

@@ -7,8 +7,11 @@ export default class Collectible extends Phaser.Physics.Arcade.Sprite {
     scene.add.existing(this);
     scene.physics.add.existing(this);
     this.body.allowGravity = false;
-    this.body.setSize(18, 18);
-    this.body.setOffset(7, 7);
+    // Generous pickup body that extends downward so a player standing on the
+    // surface below can collect the floating food by walking, while it stays
+    // collectible from a jump. (Sprite is 32x32; body reaches ~food.y+28.)
+    this.body.setSize(22, 42);
+    this.body.setOffset(5, 2);
     this.colorName = config.color || 'pink';
     this.setData('objectiveId', config.objectiveId || null);
     this.setData('hiddenCollectible', Boolean(config.hiddenCollectible));

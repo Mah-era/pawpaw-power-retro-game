@@ -1274,7 +1274,12 @@ export default class GameScene extends Phaser.Scene {
   }
 
   handleBlockCollision(player, block) {
-    if (!(player.body.velocity.y < 0 && player.y > block.y + 18)) {
+    // Arcade physics zeroes the upward velocity during separation *before* this
+    // collide callback runs, so checking velocity.y < 0 never matched. Use the
+    // touch/blocked flags set during separation to detect a hit from below.
+    const hitFromBelow = (player.body.blocked.up || player.body.touching.up)
+      && player.y > block.y;
+    if (!hitFromBelow) {
       return;
     }
 

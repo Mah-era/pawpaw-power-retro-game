@@ -56,8 +56,10 @@ export default class PowerUp extends Phaser.Physics.Arcade.Sprite {
     scene.add.existing(this);
     scene.physics.add.existing(this);
     this.body.allowGravity = false;
-    this.body.setSize(20, 20);
-    this.body.setOffset(6, 6);
+    // Generous pickup body extending downward so it can be collected by walking
+    // on the surface below as well as from a jump (sprite is 32x32).
+    this.body.setSize(24, 42);
+    this.body.setOffset(4, 2);
     this.type = config.type;
     this.powerData = data;
     this.setData('objectiveId', config.objectiveId || null);
